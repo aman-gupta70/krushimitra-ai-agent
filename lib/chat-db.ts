@@ -12,7 +12,7 @@ interface SuggestedQueries {
   contextHash: string;
 }
 
-// (Removed unused DBSchema interface to satisfy linter)
+// (Removed unused DBSchema interface to satisfy linter
 
 class ChatDatabase {
   private db: IDBDatabase | null = null;
@@ -285,7 +285,7 @@ class ChatDatabase {
       request.onerror = () => {
         console.error('Error getting suggested queries:', request.error);
         reject(request.error);
-      };
+      }; //
     });
   }
 
